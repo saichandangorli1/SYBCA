@@ -1,0 +1,102 @@
+
+===============================================
+📘 Basic Data Structures in C (Theory Only)
+Author: Om Mahadik
+===============================================
+
+This file covers the basic data structures used in C
+along with explanations written entirely in comments.
+
+-----------------------------------------------
+1. 📦 ARRAY
+-----------------------------------------------
+- An array is a collection of elements stored in contiguous memory.
+- All elements are of the same data type.
+- Accessed using an index (0-based).
+- Syntax: int arr[5] = {10, 20, 30, 40, 50};
+- Pros: Fast access using index.
+- Cons: Fixed size, not flexible.
+
+Example:
+int arr[3] = {1, 2, 3}; // Array of 3 integers
+
+-----------------------------------------------
+2. 🔗 LINKED LIST
+-----------------------------------------------
+- A linked list is a sequence of nodes.
+- Each node contains:
+  → data (value)
+  → pointer to the next node
+- Dynamic in nature (memory allocated at runtime).
+- Useful for insertions/deletions without shifting.
+
+Node Structure:
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+- Types: Singly, Doubly, Circular Linked List
+
+-----------------------------------------------
+3. 🥞 STACK (LIFO)
+-----------------------------------------------
+- Stack stands for Last In First Out.
+- The last element inserted is the first to be removed.
+- Two main operations:
+  → push(): Add element to top
+  → pop(): Remove element from top
+- Can be implemented using:
+  → Arrays
+  → Linked Lists
+
+Real-life example: Pile of plates
+
+-----------------------------------------------
+4. 🚦 QUEUE (FIFO)
+-----------------------------------------------
+- Queue stands for First In First Out.
+- The first element inserted is the first to be removed.
+- Two main operations:
+  → enqueue(): Insert at rear
+  → dequeue(): Remove from front
+- Types: Circular Queue, Priority Queue, Deque
+
+Real-life example: Waiting line at a ticket counter
+
+-----------------------------------------------
+5. 🌳 TREE
+-----------------------------------------------
+- A tree is a hierarchical data structure.
+- Consists of nodes with a parent-child relationship.
+- Binary Tree: Each node has at most 2 children.
+- Binary Search Tree (BST): Left < Root < Right
+- Used in searching, sorting, expression parsing.
+
+-----------------------------------------------
+6. 🕸️ GRAPH
+-----------------------------------------------
+- A graph is a set of nodes (vertices) connected by edges.
+- Can be:
+  → Directed or Undirected
+  → Weighted or Unweighted
+- Represented using:
+  → Adjacency Matrix
+  → Adjacency List
+
+Used in: Maps, Networks, Social Media connections
+
+-----------------------------------------------
+✨ SUMMARY
+-----------------------------------------------
+| Data Structure | Access | Insertion | Deletion | Search |
+|----------------|--------|-----------|----------|--------|
+| Array          | Fast   | Slow      | Slow     | Fast   |
+| Linked List    | Slow   | Fast      | Fast     | Slow   |
+| Stack          | Top    | Fast      | Fast     | -      |
+| Queue          | Ends   | Fast      | Fast     | -      |
+| Tree           | Varies | Varies    | Varies   | Fast   |
+| Graph          | Varies | Varies    | Varies   | Varies |
+
+
+
