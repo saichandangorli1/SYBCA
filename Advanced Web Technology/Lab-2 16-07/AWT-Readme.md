@@ -1,92 +1,68 @@
-# Advanced Web Technologies
+# AWT - Advanced Web Technology
 
-This document provides a basic overview of the core technologies used in server-side web development, particularly focusing on **PHP**, **XAMPP**, **Apache Server**, and **MySQL**.
-
----
-
-## 📌 What is PHP?
-
-**PHP (Hypertext Preprocessor)** is a widely-used open-source server-side scripting language. It is embedded within HTML and is especially suited for web development.
-
-### ✅ Key Features:
-- Open-source and free to use
-- Interpreted at runtime on the server
-- Embedded into HTML
-- Can interact with databases (commonly MySQL)
-- Platform-independent (works on Windows, Linux, macOS)
-
-### 🛠 How PHP Works:
-1. The user sends a request via the browser.
-2. The web server (like Apache) detects the `.php` file.
-3. The PHP engine processes the code on the server.
-4. Only the **output (HTML)** is sent back to the client, not the PHP code.
-5. PHP can connect to a database (e.g., MySQL), fetch or store data, and generate dynamic content.
+This repository contains materials and examples for the Advanced Web Technology module.
 
 ---
 
-## 🔧 What is XAMPP?
+## Core Structure
 
-**XAMPP** is a free and open-source cross-platform web server solution package. It provides an easy way to set up a local web server on your computer.
+This unit covers the foundational elements of advanced web development, including:
 
-### ✨ Components of XAMPP:
-- **X** = Cross-platform
-- **A** = Apache (Web Server)
-- **M** = MySQL (Database)
-- **P** = PHP (Scripting Language)
-- **P** = Perl (Optional scripting language)
-
-### 🚀 How to Use XAMPP:
-1. Download and install XAMPP from [apachefriends.org](https://www.apachefriends.org/).
-2. Launch **XAMPP Control Panel**.
-3. Start the **Apache** and **MySQL** modules.
-4. Place your PHP files inside the `htdocs` folder (`C:/xampp/htdocs`).
-5. Access your project in the browser using:  
-   `http://localhost/yourprojectname/filename.php`
+- Advanced HTML
+- Introduction to XAMPP & Apache
+- Introduction to PHP
 
 ---
 
-## 🌐 What is Apache Server?
+## Units
 
-**Apache HTTP Server** is an open-source web server software that serves web content over the internet or a local network.
-
-### ✅ Why Use Apache?
-- It processes client requests and delivers web pages.
-- It interprets and runs `.php` files using the PHP engine.
-- Compatible with various modules (PHP, SSL, etc.)
-- Secure, reliable, and flexible
+1. **Advanced HTML Features**: Exploring semantic elements, forms, multimedia, and graphics.  
+2. **Local Server Environment**: Setting up and managing a local web server using XAMPP and Apache.  
+3. **Server-Side Scripting**: An introduction to PHP for creating dynamic web pages.
 
 ---
 
-## 🗃️ What is MySQL?
+## Key Points
 
-**MySQL** is an open-source relational database management system (RDBMS).
+### XAMPP & Apache
 
-### 🧩 Features:
-- Structured storage of data in tables
-- Uses SQL (Structured Query Language) for operations
-- Can be accessed by PHP to perform **CRUD operations**:
-  - Create
-  - Read
-  - Update
-  - Delete
+- **XAMPP**: A free and open-source, cross-platform web server solution stack. It stands for Cross-Platform (X), Apache (A), MariaDB (M), PHP (P), and Perl (P). You can download it from [Apache Friends](https://www.apachefriends.org/index.html).
 
-### 🔄 PHP + MySQL Workflow:
-1. PHP script connects to the MySQL server using `mysqli` or `PDO`.
-2. Sends SQL queries to the database.
-3. Fetches the result and processes it.
-4. Displays the result to the user via HTML.
+- **Apache**: The web server software that processes requests from browsers and serves web pages. It’s the ‘A’ in XAMPP.
 
----
+    - **htdocs Directory**: This is the root directory for your web projects. Any file you want to see on your local web server must be placed inside `xampp/htdocs/`.
 
-## ✅ Summary
+    - **XAMPP Control Panel**: A simple interface to start and stop services like Apache and MySQL.
 
-| Technology | Description |
-|------------|-------------|
-| PHP        | Server-side scripting language for dynamic websites |
-| XAMPP      | Local server with PHP, MySQL, Apache |
-| Apache     | Web server to serve PHP pages |
-| MySQL      | Database system for storing website data |
+### PHP - More about PHP
+
+- **Server-Side Language**: PHP code is executed on the server, and the result is sent to the browser as plain HTML.
+
+- **Handling Form Data**: Using the `$_GET` and `$_POST` superglobal arrays to collect data submitted from HTML forms.
 
 ---
 
-⚡ **Tip**: Always restart Apache after editing your configuration or PHP files for changes to take effect.
+## What is the User Providing?
+
+The user of this folder/repository is expected to have a basic understanding of web concepts and is looking to learn more advanced topics.  
+The folder provides the necessary code examples and notes to follow along with the units.
+
+---
+
+## Requisites
+
+- A basic understanding of HTML and CSS.  
+- A code editor (e.g. [VS Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/)).  
+- A modern web browser (e.g. [Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/)).  
+- [XAMPP installed](https://www.apachefriends.org/index.html) on your computer.
+
+---
+
+## How to Use Folder
+
+1. Ensure you have **XAMPP installed** and running on your system.  
+2. Place this entire project folder inside the `htdocs` directory of your XAMPP installation. (e.g. `C:/xampp/htdocs/`)  
+3. Start the Apache module from the XAMPP Control Panel.  
+4. Open your web browser and navigate to `http://localhost/your-folder-name/` to view the projects. (Replace `your-folder-name` with the actual name of this folder.)
+
+---

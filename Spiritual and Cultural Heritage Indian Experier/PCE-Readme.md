@@ -1,117 +1,65 @@
 # 🕊️ PEACE – Spiritual and Cultural Heritage
 
-This document provides an in-depth understanding of **PEACE** as a subject, focusing on the **Spiritual and Cultural Heritage of India and the world**. It explores ancient traditions, philosophies, practices, values, and the timeless wisdom that contribute to personal well-being and societal harmony.
+This repository offers an in-depth guide to **PEACE** as a subject, focusing on the spiritual and cultural heritage of India and the world.
 
 ---
 
-## 📘 What is PEACE?
+## Core Structure
 
-**PEACE** in the academic context is an interdisciplinary subject that emphasizes **spiritual growth, cultural awareness, and universal human values**. It draws from the richness of historical civilizations, religious philosophies, and heritage to nurture harmony within the self and in society.
+The subject is built on three core pillars:
 
----
-
-## ✨ Objectives of the Subject
-
-- Understand and appreciate global and Indian spiritual traditions
-- Explore the significance of cultural heritage in shaping values
-- Promote peace, empathy, and unity through heritage-based learning
-- Learn about practices that enhance emotional, mental, and social well-being
-- Foster intercultural respect, tolerance, and non-violence
+- **Spiritual Heritage**: Exploring ancient philosophies, practices, and universal values that foster inner growth.
+- **Cultural Heritage**: Understanding the tangible (monuments, art) and intangible (traditions, language) legacies that shape societies.
+- **Universal Human Values**: Focusing on core principles like truth, non-violence, compassion, and respect that are common across all traditions.
 
 ---
 
-## 🧠 Key Themes of Spiritual Heritage
+## Units
 
-### 🪔 1. **Philosophical Foundations**
-- Teachings of ancient civilizations like India, Egypt, China, and Greece
-- Vedanta, Upanishads, Taoism, Buddhism, and Stoicism
-- Concepts of dharma (duty), karma (action), moksha (liberation), and compassion
-
-### 🧘 2. **Spiritual Practices**
-- Meditation, yoga, chanting, silence, and self-reflection
-- Rituals, prayer, and practices that build mindfulness and inner peace
-- The role of nature and balance in ancient spiritual wisdom
-
-### 🌍 3. **Universal Human Values**
-- Truth, non-violence (Ahimsa), tolerance, humility, selflessness
-- Spiritual equality and respect for all living beings
-- Emphasis on inner transformation over material success
+1. **Introduction to PEACE**: Defines the subject and its objectives to promote harmony, empathy, and well-being.  
+2. **Spiritual Heritage**: Covers the philosophical foundations (Vedanta, Taoism), spiritual practices (Yoga, meditation), and values from global traditions.  
+3. **Cultural Heritage**: Explores tangible heritage (monuments, art) and intangible heritage (festivals, music, oral traditions).  
+4. **Global Perspectives**: Provides highlights from major world spiritual traditions, including those from India, China, Greece, and Native cultures.  
+5. **Application and Values**: Discusses the role of PEACE in modern education and summarizes the core values of the subject.
 
 ---
 
-## 🏛️ Key Elements of Cultural Heritage
+## 🔑 Key Points
 
-### 🪷 1. **Tangible Heritage**
-- Monuments, temples, ancient architecture (e.g., Ajanta, Hampi, Machu Picchu)
-- Sculptures, inscriptions, textiles, folk art, and classical paintings
-- Museums, UNESCO World Heritage Sites
+### Core Concepts
 
-### 🎭 2. **Intangible Heritage**
-- Language, literature, music, dance, oral traditions
-- Festivals, customs, and traditional knowledge systems
-- Culinary traditions, community rituals, folk storytelling
+- **Inner & Outer Harmony**: The primary goal is to foster peace within oneself and in society.  
+- **Tangible vs. Intangible Heritage**: Understanding both physical artifacts and living traditions is crucial.  
+- **Ancient Wisdom, Modern Relevance**: Applying timeless philosophies to contemporary life.
 
-### 🕊️ 3. **Ethical Teachings from Cultures**
-- Indian philosophy (Bhagavad Gita, Jain and Buddhist texts)
-- Sufi mysticism, Zen teachings, and African tribal wisdom
-- Role of elders, gurus, and oral transmission of ethics
+### Core Values
+
+- **Truth (Satya)**  
+- **Non-violence (Ahimsa)**  
+- **Compassion (Karuna)**  
+- **Respect & Tolerance**
 
 ---
 
-## 🧩 Importance of Studying PEACE
+## What is the User Providing?
 
-| Aspect | Impact |
-|--------|--------|
-| Personal | Enhances emotional well-being, patience, clarity, and balance |
-| Social   | Promotes empathy, cooperation, mutual respect |
-| Educational | Builds ethical decision-making, critical thinking, cultural literacy |
-| Global  | Encourages interfaith dialogue, cross-cultural collaboration, peacebuilding |
+This repository provides a comprehensive theoretical guide to PEACE as an interdisciplinary subject. It is designed for learners interested in spiritual growth, cultural awareness, and the universal human values that connect us all.
 
 ---
 
-## 🌐 Global Spiritual Heritage Highlights
+## Requisites
 
-- **India**: Yoga, Vedas, Jainism, Bhakti and Sufi movements
-- **China**: Confucianism, Taoism, Zen Buddhism
-- **Middle East**: Islamic philosophy, Sufism, Abrahamic traditions
-- **Africa**: Tribal spirituality, community-based ethics
-- **Greece**: Socratic thought, Platonism, stoic ethics
-- **Native Cultures**: Earth-centered spirituality, harmony with nature
+- An open mind and a genuine interest in philosophy, world cultures, and self-reflection.  
+- No specific academic background is required.
 
 ---
 
-## 🔔 PEACE and Education
+## How to Use Folder
 
-The subject of PEACE aims to bridge **traditional wisdom** with **modern understanding**. It promotes:
-- Value-based education (truth, love, compassion, simplicity)
-- Cross-cultural respect and empathy
-- Harmony between scientific reasoning and spiritual grounding
-
----
-
-## 🎓 Learning Outcomes
-
-By the end of the course, learners will:
-- Understand the depth and diversity of spiritual and cultural heritage
-- Reflect on their personal values and purpose
-- Recognize the role of inner peace in creating external peace
-- Appreciate the shared values across different traditions
-- Develop a peaceful mindset rooted in compassion and unity
+1. This folder contains a self-study guide designed to be read and reflected upon.  
+2. Read through the units to understand the breadth and depth of the subject.  
+3. Use the “Key Points” and “Core Values” sections for quick reference and personal contemplation.  
+4. Explore the global traditions mentioned to broaden your understanding.  
+5. Reflect on how you can apply these principles and values in your daily life.
 
 ---
-
-## 🕉️ Summary of Core Values
-
-| Value | Description |
-|-------|-------------|
-| Peace | Inner stillness and social harmony |
-| Truth | Honesty in thought, word, and action |
-| Love | Universal acceptance and kindness |
-| Compassion | Caring for others without judgment |
-| Respect | For all cultures, beings, and the environment |
-| Non-violence | Physical, emotional, and mental restraint from harm |
-
----
-
-> 🌱 **Note**: PEACE is not just a subject — it is a **life practice** that enables individuals and communities to thrive through understanding, tolerance, and wisdom inherited from generations past.
-
