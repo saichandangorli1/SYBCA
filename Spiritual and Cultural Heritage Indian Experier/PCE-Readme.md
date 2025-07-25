@@ -2,7 +2,7 @@
 
 This repository offers an in-depth guide to **PEACE** as a subject, focusing on the spiritual and cultural heritage of India and the world.
 
----
+--- 
 
 ## Core Structure
 

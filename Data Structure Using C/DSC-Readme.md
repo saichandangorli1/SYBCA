@@ -20,7 +20,7 @@ This course covers the foundational elements of data structures, categorized as:
 1.  **Introduction to C & Data Structures:** Understanding why C is suitable for data structures, memory management (`malloc`, `free`), and the role of pointers.
 2.  **Linear Data Structures:** In-depth implementation and use cases for Arrays, Linked Lists, Stacks, and Queues.
 3.  **Non-Linear Data Structures:** Exploring the implementation of hierarchical (Trees) and network (Graphs) structures.
-4.  **Core Operations & Algorithms:** Covering essential concepts like traversing, searching, sorting, and the role of loops.
+4.  **Core Operations & Algorithms:** Covering essential concepts like traversing, searching, sorting, and the role of loops. 
 
 ## Key Points
 

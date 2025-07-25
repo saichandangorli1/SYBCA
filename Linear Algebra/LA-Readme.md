@@ -1,7 +1,7 @@
 # 📘 Linear Algebra
 
 This repository serves as a comprehensive theoretical guide to **Linear Algebra**, covering its fundamental principles, operations, and real-world applications.
-
+ 
 ---
 
 ## Core Structure

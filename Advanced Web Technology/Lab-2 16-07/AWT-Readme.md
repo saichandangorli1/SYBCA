@@ -59,7 +59,7 @@ The folder provides the necessary code examples and notes to follow along with t
 ---
 
 ## How to Use Folder
-
+cls
 1. Ensure you have **XAMPP installed** and running on your system.  
 2. Place this entire project folder inside the `htdocs` directory of your XAMPP installation. (e.g. `C:/xampp/htdocs/`)  
 3. Start the Apache module from the XAMPP Control Panel.  
