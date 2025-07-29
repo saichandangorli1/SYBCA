@@ -1,3 +1,9 @@
+<!-- 4)Write a PHP script to calculate and display the following:
+	Sum of 10 + 5
+	Product of 7 * 3
+	Result of 20 / 4 + 3 -->
+
+
 
 <?php
 $sum = 10 + 5;

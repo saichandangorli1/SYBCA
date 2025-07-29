@@ -1,4 +1,10 @@
-
+<!-- 5)Create a PHP script called student_profile.php that does the following:
+Define variables for:
+Student name:
+Roll number:
+Marks in 3 subjects:
+Calculate total marks and average:
+Print the student's details in a formatted output: -->
 
 <?php
 $student_name = "Saichandan Gorli";
