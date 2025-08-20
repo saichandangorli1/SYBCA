@@ -10,5 +10,5 @@ function calRA($l ,$w) {
 $l = 10;
 $w = 5;
 $AR = "calRA";
-echo "The area of the rectangle with length $l and width $w is: " . calRA($l, $w);
+echo "The area of the rectangle with length $l and width $w is: " . $AR($l, $w);
 ?>
