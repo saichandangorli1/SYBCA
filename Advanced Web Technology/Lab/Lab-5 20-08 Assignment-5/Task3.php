@@ -1,18 +1,15 @@
 <?php
 
 define('PI', 3.14);
-function calRA($radius) {
-    if ($radius <= 0) {
-        return "Radius must be greater than 0.";
+function calRA($l ,$w) {
+    if ($l <= 0 || $w <= 0) {
+        return "Length and width must be greater than 0.";
     }
-
-    $pi = PI;
-    $area = $pi * ($radius * $radius);  
+    $area = $l * $w;
     return $area;
 }
-
-$radius = 5;
-
+$l = 10;
+$w = 5;
 $AR = "calRA";
-echo "Area of circle with radius $radius is: " . $AR($radius);
+echo "The area of the rectangle with length $l and width $w is: " . calRA($l, $w);
 ?>
