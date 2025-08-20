@@ -6,7 +6,13 @@
 
 int main()
 {
-    int ages[5] = {21, 19, 25, 30, 22};
+    // int ages[5] = {21, 19, 25, 30, 22};
+    int ages[5];
+
+    for (int i = 0; i < 5; i++)
+    {
+        scanf("%d", &ages[i]);
+    }
 
     printf("--- Original Ages ---\n");
     for (int i = 0; i < 5; i++)
