@@ -1,6 +1,5 @@
 <?php
 
-define('PI', 3.14);
 function calRA($l ,$w) {
     if ($l <= 0 || $w <= 0) {
         return "Length and width must be greater than 0.";
