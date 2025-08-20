@@ -1,7 +1,7 @@
 <?php
 
 define('PI', 3.14);
-function calculateCircleArea($radius) {
+function calRA($radius) {
     if ($radius <= 0) {
         return "Radius must be greater than 0.";
     }
@@ -12,5 +12,7 @@ function calculateCircleArea($radius) {
 }
 
 $radius = 5;
-echo "Area of circle with radius $radius is: " . calculateCircleArea($radius);
+
+$AR = "calRA";
+echo "Area of circle with radius $radius is: " . $AR($radius);
 ?>

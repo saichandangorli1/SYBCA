@@ -10,5 +10,5 @@ function repeatStr($text, $times) {
     }
 }
 
-repeatString("Saichandan", 5);
+repeatStr("Saichandan", 5);
 ?>
