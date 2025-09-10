@@ -38,13 +38,13 @@ node insertSorted(node head, char name[], int age, float salary)
     }
     else
     {
-        node current = head;
-        while (current->next != NULL && strcmp(name, current->next->name) > 0)
+        node temp2 = head;
+        while (temp2->next != NULL && strcmp(name, temp2->next->name) > 0)
         {
-            current = current->next;
+            temp2 = temp2->next;
         }
-        temp->next = current->next;
-        current->next = temp;
+        temp->next = temp2->next;
+        temp2->next = temp;
     }
     return head;
 }
@@ -68,7 +68,7 @@ int main()
     int i;
 
     printf("Enter details for 10 persons:\n");
-    for (i = 0; i < 2; i++)
+    for (i = 0; i < 10; i++)
     {
         printf("Person %d:\n", i + 1);
         printf("Name: ");

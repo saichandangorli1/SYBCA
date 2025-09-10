@@ -2,7 +2,7 @@
 // A: 2, 5, 9, 14, 15, 17, 20, 17, 30
 // B: 14,2, 9,13 ,37,8, 7,28
 // Write a program to create
-// 1. A linked list see that contain only those element that are common in linked list A and B
+// 1. A linked list C that contain only those element that are common in linked list A and B
 // 2. A linked list d. Which contains all elements of A as well as B ensuring that there is no repetition of element
 
 #include <stdio.h>
@@ -31,10 +31,10 @@ node addNode(node head, int data)
     node temp = createNode(data);
     if (head == NULL)
         return temp;
-    node current = head;
-    while (current->next != NULL)
-        current = current->next;
-    current->next = temp;
+    node temp2 = head;
+    while (temp2->next != NULL)
+        temp2 = temp2->next;
+    temp2->next = temp;
     return head;
 }
 
@@ -103,8 +103,10 @@ int main()
     // Data for List A & B
     int A_data[] = {2, 5, 9, 14, 15, 17, 20, 17, 30};
     int B_data[] = {14, 2, 9, 13, 37, 8, 7, 28};
-    int lenA = sizeof(A_data) / sizeof(A_data);
-    int lenB = sizeof(B_data) / sizeof(B_data);
+    int lenA = 9;
+    int lenB = 8;
+    // int lenA = sizeof(A_data) / sizeof(A_data);
+    // int lenB = sizeof(B_data) / sizeof(B_data);
     node A = NULL, B = NULL;
 
     // Create lists A and B
