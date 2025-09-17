@@ -14,5 +14,6 @@ foreach ($strings as $str) {
 }
 
 echo "String with maximum length: $maxStr\n";
+echo "<br>";
 echo "String with minimum length: $minStr\n";
 ?>
