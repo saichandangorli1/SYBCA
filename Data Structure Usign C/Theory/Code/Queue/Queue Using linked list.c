@@ -1,105 +1,80 @@
+// this code this replaced with the previous code(which was refernce code from reference) for making code more simplify, if you are comfortable with that code kindly refer 'Queue Using linked list - Complex.c'
 #include <stdio.h>
 #include <stdlib.h>
 
-// Node structure
-typedef struct Node {
+struct Queue
+{
     int data;
-    struct Node* next;
-} Node;
+    struct Queue *next;
+};
+typedef struct Queue *node;
 
-// Queue structure to hold front and rear pointers
-typedef struct Queue {
-    Node* front;
-    Node* rear;
-} Queue;
+node front = NULL, rear = NULL;
 
-// Function to create and initialize a new queue
-Queue* createQueue() {
-    Queue* q = (Queue*)malloc(sizeof(Queue));
-    q->front = q->rear = NULL;
-    return q;
-}
-
-// Enqueue operation: insert element at rear
-void enqueue(Queue* q, int data) {
-    Node* newNode = (Node*)malloc(sizeof(Node));
-    if (!newNode) {
+void enqueue(int data)
+{
+    node newNode = (node)malloc(sizeof(struct Queue));
+    if (!newNode)
+    {
         printf("Memory allocation error!\n");
         return;
     }
     newNode->data = data;
     newNode->next = NULL;
-
-    if (q->rear == NULL) {
-        // Queue is empty, new node is front and rear
-        q->front = q->rear = newNode;
-    } else {
-        // Attach new node at rear and update rear pointer
-        q->rear->next = newNode;
-        q->rear = newNode;
+    if (rear == NULL)
+    {
+        front = rear = newNode;
+    }
+    else
+    {
+        rear->next = newNode;
+        rear = newNode;
     }
     printf("Enqueued: %d\n", data);
 }
 
-// Dequeue operation: remove element from front
-void dequeue(Queue* q) {
-    if (q->front == NULL) {
+void dequeue()
+{
+    if (front == NULL)
+    {
         printf("Queue is empty!\n");
         return;
     }
-
-    Node* temp = q->front;
+    node temp = front;
     printf("Dequeued: %d\n", temp->data);
-
-    q->front = q->front->next;
-
-    // If front becomes NULL, queue is empty, update rear
-    if (q->front == NULL) {
-        q->rear = NULL;
-    }
-
+    front = front->next;
+    if (front == NULL)
+        rear = NULL;
     free(temp);
 }
 
-// Display all elements in the queue
-void display(Queue* q) {
-    if (q->front == NULL) {
+void display()
+{
+    if (front == NULL)
+    {
         printf("Queue is empty!\n");
         return;
     }
+    node temp = front;
     printf("Queue elements: ");
-    Node* temp = q->front;
-    while (temp != NULL) {
+    while (temp != NULL)
+    {
         printf("%d ", temp->data);
         temp = temp->next;
     }
     printf("\n");
 }
 
-// Main function to demonstrate queue operations
-int main() {
-    Queue* q = createQueue();
-
-    enqueue(q, 10);
-    enqueue(q, 20);
-    enqueue(q, 30);
-    display(q);
-
-    dequeue(q);
-    display(q);
-
-    enqueue(q, 40);
-    enqueue(q, 50);
-    display(q);
-
-    dequeue(q);
-    dequeue(q);
-    dequeue(q);
-    dequeue(q);  // Queue will be empty here
-    display(q);
-
-    // Free the queue structure itself
-    free(q);
-
+int main()
+{
+    enqueue(10);
+    enqueue(20);
+    enqueue(30);
+    display();
+    dequeue();
+    display();
+    enqueue(40);
+    enqueue(50);
+    display();
     return 0;
 }
