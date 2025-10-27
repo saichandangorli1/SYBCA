@@ -82,7 +82,7 @@ int main()
     head = addAtLast(head, 20);
     head = addAtLast(head, 30);
     display(head);
-    head = delAtLast(head);
-    display(head);
+    // head = delAtLast(head);
+    // display(head);
     return 0;
 }

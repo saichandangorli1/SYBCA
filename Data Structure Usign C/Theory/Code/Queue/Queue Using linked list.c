@@ -5,7 +5,7 @@
 struct Queue
 {
     int data;
-    struct Queue *next;
+    struct Queue *next; // self referential
 };
 typedef struct Queue *node;
 
