@@ -13,29 +13,29 @@ typedef struct List *node;
 
 node createNode(int data)
 {
-    node temp = (node)malloc(sizeof(struct List));
-    temp->data = data;
-    temp->next = NULL;
-    return temp;
+    node new = (node)malloc(sizeof(struct List));
+    new->data = data;
+    new->next = NULL;
+    return new;
 }
 
 node addNode(node head, int data)
 {
-    node temp, temp2;
+    node new, temp;
 
-    temp = createNode(data);
+    new = createNode(data);
     if (head == NULL)
     {
-        head = temp;
+        head = new;
     }
     else
     {
-        temp2 = head;
-        while (temp2->next != NULL)
+        temp = head;
+        while (temp->next != NULL)
         {
-            temp2 = temp2->next;
+            temp = temp->next;
         }
-        temp2->next = temp;
+        temp->next = new;
     }
     return head;
 }

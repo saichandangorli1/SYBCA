@@ -11,53 +11,53 @@ typedef struct List *node;
 
 node create(int data)
 {
-    node temp = (node)malloc(sizeof(struct List));
-    temp->data = data;
-    temp->next = NULL;
-    return temp;
+    node new = (node)malloc(sizeof(struct List));
+    new->data = data;
+    new->next = NULL;
+    return new;
 }
 
 node addAtLast(node head, int data)
 {
-    node temp, temp2;
-    temp = create(data);
+    node new, temp;
+    new = create(data);
     if (head == NULL)
     {
-        head = temp;
+        head = new;
     }
     else
     {
-        temp2 = head;
-        while (temp2->next != NULL)
+        temp = head;
+        while (temp->next != NULL)
         {
-            temp2 = temp2->next;
+            temp = temp->next;
         }
-        temp2->next = temp;
+        temp->next = new;
     }
     return head;
 }
 
 node addAtBeg(node head, int data)
 {
-    node temp;
-    temp = create(data);
+    node new;
+    new = create(data);
     if (head == NULL)
     {
-        head = temp;
+        head = new;
     }
     else
     {
-        temp->next = head;
-        head = temp;
+        new->next = head;
+        head = new;
     }
     return head;
 }
 
 node addAtNth(node head, int data, int position)
 {
-    node temp, temp2;
+    node new, temp;
     int count = 1;
-    temp = create(data);
+    new = create(data);
     if (position < 0)
     {
         printf("Invalid position");
@@ -65,69 +65,69 @@ node addAtNth(node head, int data, int position)
     }
     if (head == NULL)
     {
-        head = temp;
+        head = new;
     }
     else if (position == 0)
     {
-        temp->next = head;
-        head = temp;
+        new->next = head;
+        head = new;
     }
     else
     {
-        temp2 = head;
-        while (temp2 != NULL & count < position - 1)
+        temp = head;
+        while (temp != NULL & count < position - 1)
         {
-            temp2 = temp2->next;
+            temp = temp->next;
             count++;
         }
 
-        if (temp2 == NULL)
+        if (temp == NULL)
         {
             printf("Position out of bounds\n");
             return head;
         }
 
-        temp->next = temp2->next;
-        temp2->next = temp;
+        new->next = temp->next;
+        temp->next = new;
     }
     return head;
 }
 
 node deleteAtLast(node head)
 {
-    node temp;
+    node new;
     if (head == NULL)
     {
         printf("the list is empty");
         return head;
     }
-    temp = head;
-    while (temp->next->next != NULL)
+    new = head;
+    while (new->next->next != NULL)
     {
-        temp = temp->next;
+        new = new->next;
     }
-    free(temp->next);
-    temp->next = NULL;
+    free(new->next);
+    new->next = NULL;
     return head;
 }
 
 node deleteAtBeg(node head)
 {
-    node temp;
+    node new;
     if (head == NULL)
     {
         printf("the list is empty");
         return head;
     }
-    temp = head;
+    new = head;
     head = head->next;
-    free(temp);
+    free(new);
     return head;
 }
 
 node deleteAtNth(node head, int position)
 {
-    node temp, prev;
+    node new, prev;
     int count = 1;
     if (head == NULL)
     {
@@ -141,43 +141,43 @@ node deleteAtNth(node head, int position)
     }
     if (position == 0)
     {
-        temp = head;
+        new = head;
         head = head->next;
-        free(temp);
+        free(new);
         return head;
     }
-    temp = head;
-    while (temp != NULL && count < position)
+    new = head;
+    while (new != NULL && count < position)
     {
-        prev = temp;
-        temp = temp->next;
+        prev = new;
+        new = new->next;
         count++;
     }
 
-    if (temp == NULL)
+    if (new == NULL)
     {
         printf("Position out of bounds\n");
         return head;
     }
-    prev->next = temp->next;
-    free(temp);
+    prev->next = new->next;
+    free(new);
     return head;
 }
 
 void display(node head)
 {
-    node temp = head;
+    node new = head;
     if (head == NULL)
     {
         printf("the list is empty");
         return;
     }
 
-    temp = head;
-    while (temp != NULL)
+    new = head;
+    while (new != NULL)
     {
-        printf("Element : %d\n", temp->data);
-        temp = temp->next;
+        printf("Element : %d\n", new->data);
+        new = new->next;
     }
 }
 
