@@ -20,6 +20,6 @@ class Vehicle {
 }
 
 $vehicle = new Vehicle();
-$vehicle->set("Toyota", "Camry", 24000);
+$vehicle->set("Lego", "F1", 2400);
 $vehicle->displayDetails();
 ?>

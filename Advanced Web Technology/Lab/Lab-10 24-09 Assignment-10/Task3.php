@@ -1,4 +1,3 @@
-<!-- 3.	Write a PHP class called Student with properties as name, course, and marks of three subjects. Implement a method to display student information with sum and percentage. -->
 
 <?php
 class Student {
