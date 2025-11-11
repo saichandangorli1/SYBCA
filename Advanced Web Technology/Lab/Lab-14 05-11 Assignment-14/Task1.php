@@ -20,5 +20,6 @@ class Subtraction extends Mathematics{
 $add = new Addition();
 $sub = new Subtraction();
 echo "Addition of 5 and 3: " . $add->ArithmeticOperation(5, 3) . "<br>";
-echo "Subtraction of 5 and 3: " . $sub->ArithmeticOperation(5, 3) . "<br>";
+echo "Subtraction of 5 and 3: " . $sub->ArithmeticOperation(5, 3) . "<br>
+\";
 ?>
