@@ -7,6 +7,7 @@ using namespace std;
 class Vehicle
 {
 public:
+
     string vno;
     string vname;
     string vcompany;
