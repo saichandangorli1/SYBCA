@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+<!-- Write a PHP code to accept employee name and joining date of employee in dd-mm-yyyy format and display his/her joining month -->
+
+<?php
+$name = "Om Mahadik";
+$join_date = "14-09-2023";
+$date = DateTime::createFromFormat('d-m-Y', $join_date);
+$month = $date->format('F');
+echo "$name joined in $month";
+?>
+ 
+=======
 <?php
     $name = $_POST["emp_name"];
     $date = $_POST["join_date"];
@@ -21,3 +33,4 @@
     }
 
 ?>
+>>>>>>> f67e526c8daf7b0dae0c244eb1b874fb07dcbbd0
