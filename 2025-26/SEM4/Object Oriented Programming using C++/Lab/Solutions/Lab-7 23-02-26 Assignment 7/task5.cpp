@@ -8,6 +8,11 @@ public:
     int nor;
     static int sta;
 
+    Test()
+    {
+        sta++;
+    }
+
     void display()
     {
         cout << "Normal: " << nor << ", Static: " << sta << endl;
@@ -21,9 +26,9 @@ int main()
     Test t1, t2;
 
     t1.nor = 10;
+    t1.display();
     t2.nor = 20;
 
-    t1.display();
     t2.display();
 
     return 0;

@@ -35,7 +35,7 @@ int main()
     int n;
     cout << "Enter number of employees: ";
     cin >> n;
-    Employee emp[10];
+    Employee *emp = new Employee[n];
     for (int i = 0; i < n; i++)
     {
         cout << "Enter details of employee " << i + 1 << ":" << endl;
@@ -46,6 +46,7 @@ int main()
     {
         cout << "Employee " << i + 1 << ":" << endl;
         emp[i].display();
-    }   
-return 0;
+    }
+    delete[] emp;
+    return 0;
 }
