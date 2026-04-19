@@ -43,3 +43,11 @@ public:
         cout << "Final Price after 10%' discount: " << price << endl;
     }
 };
+int main()
+{
+    Book b;
+    b.accept();
+    b.display();
+    b.applyDiscount();
+    return 0;
+}
