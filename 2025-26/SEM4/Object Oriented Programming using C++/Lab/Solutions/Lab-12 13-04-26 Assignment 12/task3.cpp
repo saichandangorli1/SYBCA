@@ -10,9 +10,11 @@ class Teacher {
         string subject;
         int teaching_hours;
 
-        Teacher(string sub, int hours) {
-            subject = sub;
-            teaching_hours = hours;
+       void accept() {
+            cout << "Enter subject: ";
+            cin >> subject;
+            cout << "Enter teaching hours: ";
+            cin >> teaching_hours;
         }
 };
 
@@ -20,8 +22,9 @@ class Researcher {
     public:
         string research_area;
 
-        Researcher(string area) {
-            research_area = area;
+        void accept() {
+            cout << "Enter research area: ";
+            cin >> research_area;
         }
 };
 
@@ -29,8 +32,11 @@ class Professor : public Teacher, public Researcher {
     public:
         string name;
 
-        Professor(string n, string sub, int hours, string area) : Teacher(sub, hours), Researcher(area) {
-            name = n;
+        void accept() {
+            cout << "Enter professor name: ";
+            cin >> name;
+            Teacher::accept();
+            Researcher::accept();
         }
 
         void displayProfile() {
@@ -42,19 +48,8 @@ class Professor : public Teacher, public Researcher {
 };
 
 int main() {
-    string name, subject, research_area;
-    int teaching_hours;
-
-    cout << "Enter professor name: ";
-    cin >> name;
-    cout << "Enter subject: ";
-    cin >> subject;
-    cout << "Enter teaching hours: ";
-    cin >> teaching_hours;
-    cout << "Enter research area: ";
-    cin >> research_area;
-
-    Professor prof(name, subject, teaching_hours, research_area);
+    Professor prof;
+    prof.accept();
     prof.displayProfile();
 
     return 0;

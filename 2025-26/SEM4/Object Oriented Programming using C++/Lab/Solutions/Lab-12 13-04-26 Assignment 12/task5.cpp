@@ -11,9 +11,11 @@ class Person {
         string name;
         int age;
 
-        Person(string n, int a) {
-            name = n;
-            age = a;
+        void accept() {
+            cout << "Enter name: ";
+            cin >> name;
+            cout << "Enter age: ";
+            cin >> age;
         }
 };
 
@@ -22,9 +24,12 @@ class Staff : public Person {
         string department;
         int experience;
 
-        Staff(string n, int a, string dept, int exp) : Person(n, a) {
-            department = dept;
-            experience = exp;
+        void accept() {
+            Person::accept();
+            cout << "Enter department: ";
+            cin >> department;
+            cout << "Enter experience (in years): ";
+            cin >> experience;
         }
 };
 
@@ -33,9 +38,12 @@ class Teaching : public Staff {
         int emp_id;
         double salary;
 
-        Teaching(string n, int a, string dept, int exp, int id, double s) : Staff(n, a, dept, exp) {
-            emp_id = id;
-            salary = s;
+        void accept() {
+            Staff::accept();
+            cout << "Enter employee ID: ";
+            cin >> emp_id;
+            cout << "Enter salary: ";
+            cin >> salary;
         }
 
         void displayInfo() {
@@ -53,9 +61,12 @@ class NonTeaching : public Staff {
         int emp_id;
         double salary;
 
-        NonTeaching(string n, int a, string dept, int exp, int id, double s) : Staff(n, a, dept, exp) {
-            emp_id = id;
-            salary = s;
+        void accept() {
+            Staff::accept();
+            cout << "Enter employee ID: ";
+            cin >> emp_id;
+            cout << "Enter salary: ";
+            cin >> salary;
         }
 
         void displayInfo() {
@@ -69,31 +80,18 @@ class NonTeaching : public Staff {
 };
 
 int main() {
-    string name, department;
-    int age, experience, emp_id;
-    double salary;
+    Teaching teach;
+    NonTeaching nonTeach;
 
-    cout << "Enter staff name: ";
-    cin >> name;
-    cout << "Enter age: ";
-    cin >> age;
-    cout << "Enter department: ";
-    cin >> department;
-    cout << "Enter experience (in years): ";
-    cin >> experience;
-    cout << "Enter employee ID: ";
-    cin >> emp_id;
-    cout << "Enter salary: ";
-    cin >> salary;
-
-    Teaching teaching_staff(name, age, department, experience, emp_id, salary);
-    NonTeaching non_teaching_staff(name, age, department, experience, emp_id, salary);
-
+    cout << "Enter details for Teaching Staff:" << endl;
+    teach.accept();
     cout << "\nTeaching Staff Information:" << endl;
-    teaching_staff.displayInfo();
+    teach.displayInfo();
 
+    cout << "\nEnter details for Non-Teaching Staff:" << endl;
+    nonTeach.accept();
     cout << "\nNon-Teaching Staff Information:" << endl;
-    non_teaching_staff.displayInfo();
+    nonTeach.displayInfo();
 
     return 0;
 }

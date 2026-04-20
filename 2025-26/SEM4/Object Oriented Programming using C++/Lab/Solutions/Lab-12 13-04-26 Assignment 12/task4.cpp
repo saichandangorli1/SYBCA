@@ -13,23 +13,28 @@ class Student {
         string name;
         int roll_number;
 
-        Student(string n, int r) {
-            name = n;
-            roll_number = r;
+        void accept() {
+            cout << "Enter student name: ";
+            cin >> name;
+            cout << "Enter roll number: ";
+            cin >> roll_number;
         }
 };
 
 class Science : public Student {
     public:
-        double physics_marks;
-        double chemistry_marks;
+        float physics_marks;
+        float chemistry_marks;
 
-        Science(string n, int r, double p, double c) : Student(n, r) {
-            physics_marks = p;
-            chemistry_marks = c;
+        void accept() {
+            Student::accept();
+            cout << "Enter physics marks: ";
+            cin >> physics_marks;
+            cout << "Enter chemistry marks: ";
+            cin >> chemistry_marks;
         }
 
-        void displayResults() {
+        void displayResult() {
             cout << "Name: " << name << endl;
             cout << "Roll Number: " << roll_number << endl;
             cout << "Physics Marks: " << physics_marks << endl;
@@ -39,15 +44,18 @@ class Science : public Student {
 
 class Commerce : public Student {
     public:
-        double accounts_marks;
-        double business_communication_marks;
+        float accounts_marks;
+        float business_communication_marks;
 
-        Commerce(string n, int r, double a, double b) : Student(n, r) {
-            accounts_marks = a;
-            business_communication_marks = b;
+        void accept() {
+            Student::accept();
+            cout << "Enter accounts marks: ";
+            cin >> accounts_marks;
+            cout << "Enter business communication marks: ";
+            cin >> business_communication_marks;
         }
 
-        void displayResults() {
+        void displayResult() {
             cout << "Name: " << name << endl;
             cout << "Roll Number: " << roll_number << endl;
             cout << "Accounts Marks: " << accounts_marks << endl;
@@ -56,30 +64,18 @@ class Commerce : public Student {
 };
 
 int main() {
-    string name;
-    int roll_number;
-    double physics_marks, chemistry_marks, accounts_marks, business_communication_marks;
+    Science sci_student;
+    Commerce com_student;
 
-    cout << "Enter student name: ";
-    cin >> name;
-    cout << "Enter roll number: ";
-    cin >> roll_number;
+    cout << "Enter details for Science student:" << endl;
+    sci_student.accept();
+    cout << "\nScience Student Result:" << endl;
+    sci_student.displayResult();
 
-    cout << "Enter physics marks: ";
-    cin >> physics_marks;
-    cout << "Enter chemistry marks: ";
-    cin >> chemistry_marks;
-
-    Science science_student(name, roll_number, physics_marks, chemistry_marks);
-    science_student.displayResults();
-
-    cout << "Enter accounts marks: ";
-    cin >> accounts_marks;
-    cout << "Enter business communication marks: ";
-    cin >> business_communication_marks;
-
-    Commerce commerce_student(name, roll_number, accounts_marks, business_communication_marks);
-    commerce_student.displayResults();
+    cout << "\nEnter details for Commerce student:" << endl;
+    com_student.accept();
+    cout << "\nCommerce Student Result:" << endl;
+    com_student.displayResult();
 
     return 0;
 }
