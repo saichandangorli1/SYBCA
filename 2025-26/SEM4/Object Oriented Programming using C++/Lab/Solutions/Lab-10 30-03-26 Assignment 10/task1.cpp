@@ -21,7 +21,7 @@ public:
 int main()
 {
     int value;
-    cout << "Enter a number: ";k
+    cout << "Enter a number: ";
     cin >> value;
     Number num(value);
     cout << "Original ";
