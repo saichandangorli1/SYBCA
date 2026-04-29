@@ -12,3 +12,6 @@ for i in lst:
         
 print(even)
 print(odd)
+
+# Output:
+# 2 

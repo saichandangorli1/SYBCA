@@ -7,3 +7,7 @@ for i in lst:
     if key == i:
         print("key found")
         break
+    
+# Output:
+# enter a key :33
+# key found

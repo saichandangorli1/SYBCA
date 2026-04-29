@@ -9,3 +9,7 @@ for item in source_list:
 
 print("Source List:", source_list)
 print("Result Tuple:", result_tuple)
+
+# Output:
+# Source List: [1, 2, 3, 4, 5]
+# Result Tuple: (1, 2, 3, 4, 5)

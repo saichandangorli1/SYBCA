@@ -6,3 +6,5 @@ set3 = {5, 6, 7, 8, 9}
 
 commonElems = set1.intersection(set2).intersection(set3)
 print("Common elements among three sets:", commonElems)
+
+# Output: Common elements among three sets: {5}

@@ -9,3 +9,5 @@ for i in lst:
         
         
 print(max)
+
+# Output: 33

@@ -10,3 +10,7 @@ tuple_to_list = list(sample_tuple)
 
 print("List converted to tuple:", list_to_tuple)
 print("Tuple converted to list:", tuple_to_list)
+
+# Output:
+# List converted to tuple: (10, 20, 30)
+# Tuple converted to list: ['A', 'B', 'C']

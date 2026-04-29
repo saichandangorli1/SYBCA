@@ -5,3 +5,5 @@ set2 = {4, 5, 6, 7, 8}
 
 sds = set1.symmetric_difference(set2)
 print("Symmetric Difference of sets:", sds)
+
+# Output: Symmetric Difference of sets: {1, 2, 3, 6, 7, 8}

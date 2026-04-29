@@ -7,3 +7,5 @@ for i in lst:
     sum+=i
     
 print(sum)
+
+# Output: 52

@@ -6,3 +6,5 @@ def checkEvenOdd(num):
     else:
         print(f"{num} is an odd number.")
 checkEvenOdd(10)
+
+# Output: 10 is an even number.

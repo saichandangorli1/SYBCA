@@ -11,3 +11,7 @@ while index >= 0:
 
 print("Original List:", original_list)
 print("Reversed List:", reversed_list)
+
+# Output:
+# Original List: [10, 20, 30, 40, 50]
+# Reversed List: [50, 40, 30, 20, 10]

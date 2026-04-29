@@ -9,3 +9,10 @@ print("Unpacked values:")
 print("Name:", name)
 print("Age:", age)
 print("Subject:", subject)
+
+# Output:
+# Packed Tuple: ('User', 20, 'Computer Science')
+# Unpacked values:
+# Name: User
+# Age: 20
+# Subject: Computer Science

@@ -6,3 +6,12 @@ for i in tpl:
     print(i)
     
 print(tpl)
+
+# Output:
+# 1
+# 2
+# 33
+# 4
+# 5
+# 7
+# (1, 2, 33, 4, 5, 7)   

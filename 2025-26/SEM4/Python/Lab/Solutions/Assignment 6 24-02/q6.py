@@ -4,3 +4,5 @@ def hello():
     print("Welcome to Python Programming")
 
 hello()
+
+# Output: Welcome to Python Programming

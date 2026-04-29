@@ -8,3 +8,7 @@ print("Union of sets:", union_set)
 
 intersection_set = set1.intersection(set2)
 print("Intersection of sets:", intersection_set)
+
+# Output:
+# Union of sets: {1, 2, 3, 4, 5, 6, 7, 8}
+# Intersection of sets: {4, 5}

@@ -5,4 +5,10 @@ numbers = [12, 45, 2, 9, 16, 33, 20]
 even_numbers = [num for num in numbers if num % 2 == 0]
 
 print("Original List:", numbers)
-print("Even Numbers:", even_numbers)
+print("Even Numbers:", even_numbers)\
+    
+    # Output:
+    # Original List: [12, 45, 2, 9, 16
+    # , 33, 20]
+    # Even Numbers: [12, 2, 16, 20]
+    

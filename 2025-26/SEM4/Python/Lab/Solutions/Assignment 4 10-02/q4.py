@@ -6,3 +6,11 @@ for i in lst:
     if i %2==0:
         continue
     print(i)
+    
+    
+    # Output:
+    # 1 
+    # 33
+    # 5
+    # 7
+        

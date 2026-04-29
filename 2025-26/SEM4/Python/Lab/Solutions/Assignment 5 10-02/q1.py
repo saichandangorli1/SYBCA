@@ -11,3 +11,10 @@ print("Tuple:", my_tuple)
 print("Element:", element)
 print("Count:", c)
 print("Index:", i)
+
+# Output:
+# Tuple: (1, 5, 7, 5, 9,
+# 10)
+# Element: 5    
+# Count: 3
+# Index: 1
