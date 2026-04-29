@@ -9,3 +9,6 @@ def cube(n):
 number = 3
 print(f"The square of {number} is: {square(number)}")
 print(f"The cube of {number} is: {cube(number)}")
+
+# output: The square of 3 is: 9
+# output: The cube of 3 is: 27

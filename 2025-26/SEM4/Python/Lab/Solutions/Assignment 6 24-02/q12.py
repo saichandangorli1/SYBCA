@@ -6,3 +6,5 @@ principal = 1000
 time = 2
 interest = cal(principal, time)
 print("Simple Interest is:", interest)
+
+# output: Simple Interest is: 100.0

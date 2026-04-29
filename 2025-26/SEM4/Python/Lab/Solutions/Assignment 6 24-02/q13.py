@@ -13,3 +13,5 @@ n2 = 20
 n3 = 15
 largest = findLargest(n1, n2, n3)
 print("The largest number is:", largest)
+
+# output: The largest number is: 20
