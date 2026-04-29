@@ -7,3 +7,5 @@ area = math.pi * radius ** 2  # Calculate the area of the circle using the formu
 circumference = 2 * math.pi * radius  # Calculate the circumference using the formula C = 2πr
 
 print(f"The area of the circle with radius {radius} is: {area}")  # Output: The area of the circle with radius 5 is: 78.53981633974483
+
+print(f"The circumference of the circle with radius {radius} is: {circumference}")  # Output: The circumference of the circle with radius 5 is: 31.41592653589793
