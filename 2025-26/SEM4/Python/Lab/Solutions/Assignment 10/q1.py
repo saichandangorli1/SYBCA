@@ -38,5 +38,9 @@ student3.display_details()
 print(f"Grade: {student3.calculate_grade()}")  # Output: Grade: C
 
 
-
-    
+# Output:# Name: Alice, Roll No: 1, Marks: 95
+# Grade: A
+# Name: Bob, Roll No: 2, Marks: 85
+# Grade: B
+# Name: Charlie, Roll No: 3, Marks: 75
+# Grade: C
