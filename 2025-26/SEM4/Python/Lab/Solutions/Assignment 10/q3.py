@@ -54,3 +54,11 @@ is_valid = BankAccount.validate_account_number("12345")  # Validate an invalid a
 
 print(f"Is the account number valid? {is_valid}")  # Output: Is the account number valid? False
 
+
+
+# output:
+# Deposited 500. New balance: 1500
+# Withdrew 200. New balance: 1300
+# Interest rate changed to: 0.03
+# Is the account number valid? True
+# Is the account number valid? False
